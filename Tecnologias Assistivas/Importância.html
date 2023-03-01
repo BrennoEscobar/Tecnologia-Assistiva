@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>T.A. Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" onclick="darkMode()" class="botao-fixado"/>
+    <script>
+        function darkMode() {
+            let minhaImagem = document.querySelector('img');
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            let meuSrc = minhaImagem.getAttribute('src');
+            if(meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+            } else {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+            }
+        }
+    </script>
+
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+    <nav>
+      <ul>
+        <li><a href="Início.html">Início</a></li>
+        <li><a href="Ilustrações.html">Ilustrações</a></li>
+        <li><a href="Importância.html">Importância</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Importância</h2>
+
+        <p>As inovações tecnológicas têm favorecido diversas necessidades humanas,
+          desde o preparo de um alimento até a comunicação. Com a inovação a tecnologia
+          assume um papel diferente na sociedade, de pessoa para pessoa. O que para muitos é
+          facilidade para outros é a possibilidade de fazer algo. Dentre as pessoas que usam as
+          tecnologias para torna as coisas possíveis estão às pessoas com necessidades especiais,
+          nesse contexto as tecnologias assumem a função de tecnologia assistiva. Os usos das
+          tecnologias assistivas na educação são de fundamental importância, pois possibilitam o
+          processo de aprendizagem otimizando as potencialidades de cada aluno. O avanço da
+          tecnologia contribui cada vez mais para a inclusão dos alunos com deficiência. Tendo
+          em vistas as possibilidades de que as tecnologias assistivas se tornam necessárias para o
+          aprendizado dos alunos com deficiência. Pela interação do aluno com deficiência e o
+          computador, limitações de coordenação e assimilações podem ficar reduzidas, pois pela
+          prática na utilização do computador o aluno com deficiência interage de forma
+          autônoma e os processos de comandos fazem com que o aluno melhore a sua
+          coordenação motora, e por meio dos softwares educativos o mesmo pode melhorar a sua
+          cognição. O presente trabalho tem por objetivo mostrar as atividades desenvolvidas por
+          um trabalho de extensão, que tem como objetivo principal a Inserção da Tecnologia
+          Assistiva, utilizando a informática para ajudar no processo de ensino e aprendizagem da
+          criança com deficiência intelectual e múltipla de forma construtiva e criativa
+          favorecendo o seu desenvolvimento global. Ele foi desenvolvido na APAE (Associação
+          de Pais e Amigos dos Excepcionais) da cidade de Areia-PB, juntamente com a
+          Universidade Federal da Paraíba (UFPB) no Centro de Ciências Agrárias (CCA).
+          Realizado no período de 2013.
+          </p>
+
+
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+      <h3> Saiba mais </h3>
+
+          <a href="http://www.each.usp.br/petsi/jornal/?p=2844#:~:text=“Tecnologia%20Assistiva%20é%20uma%20área,incapacidades%20ou%20mobilidade%20reduzida%2C%20visando">Tecnologia assistiva: a tecnologia a favor da acessibilidade e inclusão</a>
+          <br>
+          <a href="https://maisautonomia.com.br/2020/01/29/tecnologias-assistivas/?gclid=EAIaIQobChMI9cyTv-W7_QIVGdWRCh1AwQfJEAAYASAAEgLpePD_BwE">Tecnologias Assistivas: Ferramentas para a inclusão</a>
+          <br>
+          <a href="https://brasil.un.org/pt-br/182189-cerca-de-um-bilhao-de-pessoas-com-deficiencia-tem-acesso-negado-tecnologia-assistiva">Deficientes com Acesso Negado a Tecnologia Assistiva</a>
+
+    </footer>
+
+  </body>
+</html>

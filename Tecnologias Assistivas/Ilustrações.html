@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>T.A. Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" onclick="darkMode()" class="botao-fixado"/>
+    <script>
+        function darkMode() {
+            let minhaImagem = document.querySelector('img');
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            let meuSrc = minhaImagem.getAttribute('src');
+            if(meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+            } else {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+            }
+        }
+    </script>
+
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+    <nav>
+      <ul>
+        <li><a href="Início.html">Início</a></li>
+        <li><a href="Ilustrações.html">Ilustrações</a></li>
+        <li><a href="Importância.html">Importância</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Ilustrações de Tecnologia Assistiva</h2>
+
+        <style>
+          div {
+            text-align: center;
+          }
+        </style>
+        
+        <div>
+          <img src="tecassistiva.png" class="articleimg">
+          <img src="braille.jpg" class="articleimg">
+          <img src="assistivas.png" class="articleimg">
+          <img src="bracomec.png" class="articleimg">
+          <img src="Robo_Vestivel.png" class="articleimg">
+          <img src="tecnologia-assistida.jpg" class="articleimg">
+        </div>
+        
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+  </body>
+</html>

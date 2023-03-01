@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>T.A. Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" onclick="darkMode()" class="botao-fixado"/>
+    <script>
+        function darkMode() {
+            let minhaImagem = document.querySelector('img');
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            let meuSrc = minhaImagem.getAttribute('src');
+            if(meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+            } else {
+                minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+            }
+        }
+    </script>
+
+    <nav>
+      <ul>
+        <li><a href="Início.html">Início</a></li>
+        <li><a href="Ilustrações.html">Ilustrações</a></li>
+        <li><a href="Importância.html">Importância</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Tecnologias Assistivas</h2>
+        
+        <style>
+          div {
+            text-align: center;
+          }
+        </style>
+        
+        <div>
+          <img src="2115.png" class="articleimg">
+        </div>
+
+        <h3 id="A1">O que são?</h3>
+
+        <p>Tecnologia Assistiva é o termo usado para identificar todo o 
+          arsenal de Recursos e Serviços que contribuem para proporcionar ou 
+          ampliar habilidades funcionais de pessoas com deficiência e consequentemente 
+          promover Vida Independente e Inclusão. É também definida como
+          "uma ampla gama de equipamentos, serviços, estratégias e práticas 
+          concebidas e aplicadas para minorar os problemas encontrados pelos 
+          indivíduos com deficiências" (Cook e Hussey • Assistive Technologies: 
+          Principles and Practices • Mosby – Year Book, Inc., 1995).</p>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    
+  </body>
+</html>
